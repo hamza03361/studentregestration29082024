@@ -1,0 +1,267 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blurview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2E1FF"
+    tools:context=".Profile">
+
+    <FrameLayout
+        android:id="@+id/smallImageViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Original small ImageView (back arrow) -->
+        <ImageView
+            android:id="@+id/smallImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start"
+            android:layout_margin="8dp"
+            android:src="@drawable/registrationform1_backarrow" />
+
+        <!-- Additional small ImageView inside FrameLayout -->
+        <ImageView
+            android:id="@+id/smallImageViewInside"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:src="@drawable/registrationform1_smallestarrow" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/profiletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="60dp"
+        android:text="Profile"
+        android:textColor="#12163F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/smallImageViewContainer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menuimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/menuuu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profiletextview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updatepassword"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_buttonn"
+        android:text="Update Password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profiletextview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profilepic"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profiletextview" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:text="Username"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile" />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:text="User.id"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <TextView
+        android:id="@+id/userregistrationnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:text="SP19-BSE-009"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userid" />
+
+    <TextView
+        android:id="@+id/registrationnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="170dp"
+        android:text="Registration number"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userregistrationnumber" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/userregistrationnumber"
+        app:layout_constraintTop_toBottomOf="@id/userid" />
+
+    <TextView
+        android:id="@+id/program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="BSE"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@id/line"
+        app:layout_constraintTop_toBottomOf="@id/userid" />
+
+    <TextView
+        android:id="@+id/programs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Program"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/line"
+        app:layout_constraintTop_toBottomOf="@id/program" />
+
+    <!-- Spinner for selecting the month -->
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/months_array"
+        app:layout_constraintEnd_toStartOf="@+id/yearSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrationnumber" />
+
+    <!-- Spinner for selecting the year -->
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/years_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/monthSpinner"
+        app:layout_constraintTop_toBottomOf="@id/registrationnumber" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#040B31"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthSpinner">
+
+        <!-- Player Header -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- M Header -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Entry time"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Runs Header -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Exit time"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- RecyclerView for Points Table -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pointsTableRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/header"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:listitem="@layout/item_inandout" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

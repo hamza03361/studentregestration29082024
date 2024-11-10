@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/secondthemecolor"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <!-- Player Info Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <!-- Team Name -->
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="1"
+                android:text="04 Sep"
+                android:textSize="16dp"
+                android:textColor="#222222"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Played (P) -->
+        <TextView
+            android:id="@+id/intime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="10:20 am"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold" />
+
+        <!-- Wins (W) -->
+        <TextView
+            android:id="@+id/outtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="5:40 pm"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
